@@ -5,5 +5,7 @@ url: https://juliendargelos.github.io/minigenerator
 githubUsername: juliendargelos
 twitterUsername: juliendargelos
 codepenUsername: juliendargelos
-themeColor: blue # green, blue, orange, purple, grey
+themeColor: purple # green, blue, orange, purple, grey
 remote_theme: juliendargelos/material-jekyll-theme
+navigation:
+  Home: /
