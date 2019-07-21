@@ -1,0 +1,30 @@
+{
+  "name": "minigenerator",
+  "description": "The simplest way to generate files on the go.",
+  "version": "0.0.1",
+  "author": "Julien Dargelos <contact@juliendargelos.com>",
+  "repository": "juliendargelos/minigenerator",
+  "homepage": "https://juliendargelos.github.io/minigenerator",
+  "bugs": "https://github.com/juliendargelos/minigenerator",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "build": "tsc && tsc -d --emitDeclarationOnly --outFile dist/types.d.ts"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {
+    "@types/ejs": "^2.6.3",
+    "ejs": "^2.6.2",
+    "fast-glob": "^3.0.4",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^6.5.0",
+    "minimatch": "^3.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.8",
+    "typescript": "^3.5.3"
+  }
+}
