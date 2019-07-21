@@ -1,3 +1,7 @@
+---
+title: built-in
+---
+
 There are a few built-in handlers and rules you may find useful:
 
 ```javascript

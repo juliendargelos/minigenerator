@@ -7,7 +7,7 @@ twitterUsername: juliendargelos
 codepenUsername: juliendargelos
 remote_theme: juliendargelos/material-jekyll-theme
 navigation:
-  Overview: /
-  Options: /options/
-  Rules: /rules/
-  Built-In: /built-in/
+  overview: /
+  options: /options
+  rules: /rules
+  built-In: /built-in

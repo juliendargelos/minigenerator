@@ -1,3 +1,7 @@
+---
+title: options
+---
+
 These are the generator default options:
 
 ```javascript

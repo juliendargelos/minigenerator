@@ -1,3 +1,7 @@
+---
+title: rules
+---
+
 Rules can be written as an object or an array of objects:
 
 ```javascript

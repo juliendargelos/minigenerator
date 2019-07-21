@@ -1,3 +1,7 @@
+---
+title: minigenerator
+---
+
 ## Install
 
 With yarn:
