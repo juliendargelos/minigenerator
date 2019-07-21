@@ -7,3 +7,5 @@ twitterUsername: juliendargelos
 codepenUsername: juliendargelos
 themeColor: blue # green, blue, orange, purple, grey
 remote_theme: alexcarpenter/material-jekyll-theme
+sass:
+  style: compressed
