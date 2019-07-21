@@ -6,6 +6,7 @@ githubUsername: juliendargelos
 twitterUsername: juliendargelos
 codepenUsername: juliendargelos
 remote_theme: juliendargelos/material-jekyll-theme
+fixedNav: 'true'
 navigation:
   overview: /
   options: /options
