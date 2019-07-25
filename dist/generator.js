@@ -7,7 +7,7 @@ const path_1 = __importDefault(require("path"));
 const fs_extra_1 = __importDefault(require("fs-extra"));
 const fast_glob_1 = __importDefault(require("fast-glob"));
 const minimatch_1 = __importDefault(require("minimatch"));
-const inquirer_1 = __importDefault(require("inquirer"));
+const prompts_1 = __importDefault(require("prompts"));
 const utils_1 = require("./utils");
 class Generator {
     constructor({ source, include = '**/*', exclude = [], rules = [], context = {}, glob = {} }) {
@@ -47,7 +47,7 @@ class Generator {
         return await entry && utils_1.cleanArray(rule.use).reduce(async (entry, handler) => (await entry && handler(await entry, this.context)), entry);
     }
     async prompt(questions) {
-        this.context = Object.assign({}, this.context, (await inquirer_1.default.promp(questions)));
+        this.context = Object.assign({}, this.context, (await prompts_1.default(questions)));
     }
     async generate(destination) {
         destination = path_1.default.resolve(destination);

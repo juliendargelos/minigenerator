@@ -21,7 +21,7 @@ new Generator({
 > 
 > Since they depend on internal use, `cwd`, `ignore`, `objectMode` and `absolute` options cannot be set.
 
-Not that you can directly feed the generator context from cli prompt:
+Note that you can directly feed the generator context from cli prompt:
 
 ```javascript
 ;(async () => {
@@ -30,6 +30,8 @@ Not that you can directly feed the generator context from cli prompt:
   /// => { name: 'Name from cli input' }
 })()
 ```
+
+The `prompt` method is a proxy to the [prompts package](https://github.com/terkelg/prompts) method. It takes the same parameters.
 
 ---
 

@@ -2,7 +2,7 @@ import path from 'path'
 import fs from 'fs-extra'
 import glob from 'fast-glob'
 import minimatch from 'minimatch'
-import inquirer from 'inquirer'
+import prompts from 'prompts'
 import { Config } from './config'
 import { Rule } from './rule'
 import { Handler } from './handler'
@@ -77,7 +77,7 @@ export class Generator implements Config {
   }
 
   async prompt(questions): Promise<void> {
-    this.context = { ...this.context, ...(await inquirer.promp(questions)) }
+    this.context = { ...this.context, ...(await prompts(questions)) }
   }
 
   async generate(destination: string): Promise<void> {
